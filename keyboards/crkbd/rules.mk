@@ -1,1 +1,5 @@
 DEFAULT_FOLDER = crkbd/rev1
+RGBLIGHT_ENABLE = yes
+OLED_ENABLE = yes
+LTO_ENALBLE = yes
+VIA_ENABLE = yes
