@@ -9,9 +9,9 @@
         "device_version": "0.0.1"
     },
     "features": {
-        "bootmagic": false,
+        "bootmagic": true,
         "extrakey": true,
-        "nkro": true,
+        "nkro": false,
         "rgblight": false,
         "rgb_matrix": true
     },
@@ -53,7 +53,7 @@
             "rainbow_beacon" : true,
             "raindrops" : true
         },
-        "driver": "sn32f2xx",
+        "driver": "sn32f24xb",
         "layout": [
             {"matrix": [0, 0], "flags": 4, "x": 0, "y": 0},
 

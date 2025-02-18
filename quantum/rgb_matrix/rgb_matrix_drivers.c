@@ -15,6 +15,8 @@
  */
 
 #include "rgb_matrix_drivers.h"
+#include "rgb_matrix.h"
+#include "rgb_matrix_types.h"
 
 #include <stdbool.h>
 #include "keyboard.h"
@@ -125,7 +127,7 @@ const rgb_matrix_driver_t rgb_matrix_driver = {
 };
 
 #elif defined(RGB_MATRIX_SNLED27351)
-const rgb_matrix_driver_t rgb_matrix_driver = {
+const  rgb_matrix_driver = {
     .init          = snled27351_init_drivers,
     .flush         = snled27351_flush,
     .set_color     = snled27351_set_color,
@@ -217,5 +219,14 @@ const rgb_matrix_driver_t rgb_matrix_driver = {
     .flush         = sn32f2xx_flush,
     .set_color     = sn32f2xx_set_color,
     .set_color_all = sn32f2xx_set_color_all,
+};
+#elif defined(RGB_MATRIX_SN32F24xB)
+static void flush(void) {}  // Due to the way we do PWM, every cycle is a flush
+
+const rgb_matrix_driver_t rgb_matrix_driver = {
+    .init          = SN32F24xB_init,
+    .flush         = flush,
+    .set_color     = SN32F24xB_set_color,
+    .set_color_all = SN32F24xB_set_color_all,
 };
 #endif

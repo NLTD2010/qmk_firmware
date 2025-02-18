@@ -1,1 +1,11 @@
+SRC = ../../../drivers/led/sn32/matrix_sn32f24xx.c
+
+
 VIA_ENABLE = yes
+CUSTOM_MATRIX = yes
+MAGIC_ENABLE = yes
+MAGIC_KEYCODE_ENABLE = yes
+BOOTMAGIC_ENABLE = yes
+
+RGB_MATRIX_ENABLE = yes
+RGB_MATRIX_DRIVER = sn32f24xb

@@ -597,7 +597,8 @@
                         "snled27351",
                         "ws2812",
                         "sled1734x",
-                        "sn32f2xx"
+                        "sn32f2xx",
+                        "sn32f24xb"
                     ]
                 },
                 "center_point": {

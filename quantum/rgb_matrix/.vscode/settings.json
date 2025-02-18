@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "rgb_matrix_drivers.h": "c",
+        "rgb_matrix.h": "c"
+    }
+}

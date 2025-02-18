@@ -14,6 +14,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #pragma once
-#define DYNAMIC_KEYMAP_LAYER_COUNT 2 // Change this if you want more via's layer.
+#define DYNAMIC_KEYMAP_LAYER_COUNT 3 // Change this if you want more via's layer.
 
 #define RGB_MATRIX_LED_COUNT 87 // IDK!!!
+
